@@ -5,6 +5,357 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Portfolio</title>
+
+<style>
+* {
+  background: rgb(233, 233, 233);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#welcome,
+#portfolio {
+  width: 20px;
+  height:20px;
+}
+
+
+.navBar {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 90%;
+  /* background: red; */
+  z-index: 1000;
+}
+
+.name {
+  align-content: flex-start;
+  /* color: rgb(255, 139, 135); */
+  /* color: #ffba01; */
+  /* color: rgb(74, 157, 157); */
+  /* color: #42A7FF; */
+  /* color: #88D9FF; */
+  /* color: #00674F; */
+  /* color: #73E6CB; */
+  color: #3EBB9E;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  background: rgb(185, 183, 183);
+  /* background: rgb(233, 233, 233); */
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  color: rgb(136 136 135);
+  /* border: dashed; */
+}
+
+.links {
+  background: rgb(233, 233, 233);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
+.links:hover {
+  background: rgb(185, 183, 183);
+  color: rgb(42 52 55);
+  transition: 0.9s;
+}
+
+button {
+  border: none;
+  font-size: 15px;
+}
+
+.contact {
+  /* background: rgb(128 194 205); */
+  /* background: #ffba01; */
+  background: #3EBB9E;
+  /* background: rgb(255, 139, 135); */
+  /* background: rgb(233, 233, 233); */
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding: 0 10px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.contact:hover {
+  background: rgb(185, 183, 183);
+  transition:0.9s;
+}
+
+/*! @media for nav bar */
+
+.welcome {
+  /* position: absolute; */
+  margin-top: 150px;
+  font-size: 35px;
+  margin-left: 70px;
+  font-weight: 300;
+  line-height: 0.3;
+  width: 50%;
+}
+
+.intro {
+  color: rgb(136 136 135);
+  /* color: #00674F; */
+}
+
+.portfolioButton,
+.visitTheWebsite {
+  border: none;
+  background: rgb(185, 183, 183);
+  font-size: 16px;
+  /* width: 80px; */
+  height: 20px;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(42 52 55);
+  font-weight: 500;
+}
+
+.portfolioButton:hover,
+.visitTheWebsite:hover {
+  /* transform: scale(1.2); */
+  background: #ffba01;
+  color:rgb(42 52 55);
+  transition: 0.9s;
+}
+
+.visitTheWebsite {
+  margin-left: 10px;
+}
+
+.investaLogo {
+  width: 70px;
+  height: auto;
+}
+
+.portfolio,
+.heading,
+.portfolioContainer,
+.portfolioLink,
+.list,
+.firstLine,
+.aboutMeParagraph,
+.name,
+img,
+a,
+h3 {
+  background: rgb(244, 241, 241);
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 80vh;
+  margin-left: 10px;
+}
+
+
+.firstLine {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+
+}
+
+.portfolioHeading,
+.aboutMeHeading,
+.getInTouchHeading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 2px;
+}
+
+
+.heading {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container,
+.aboutMeContainer,
+.getInTouchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  /* border: dashed red; */
+  width: 80%;
+  background: rgb(244, 241, 241);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: box-shadow 0.2s ease;
+}
+
+.container:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+/* } */
+
+.container,
+.aboutMeContainer {
+  flex-direction: column;
+}
+
+.getInTouchContainer {
+  flex-direction: row;
+}
+.container {
+  margin-top: 3px;
+}
+
+.aboutMeParagraph {
+  padding-left: 180px;
+  padding-right: 180px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.portfolio {
+  margin-bottom: 50px;
+  border-radius: 6%;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.12); */
+  /* border: dashed; */
+}
+
+.portfolioContainer {
+  /* border: dashed; */
+  padding: 20px;
+}
+
+/* img */
+
+.fundPortfolio,
+.orderHistory,
+.placeNewOrder,
+.profile {
+  width: 50px;
+  height: auto;
+}
+
+.textAndScreenshots {
+  display: flex;
+  flex-direction: column;
+}
+
+.investaScreenshots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    background: rgb(244, 241, 241);
+}
+
+.investaScreenshots img {
+    width: 900px;        /* desired thumbnail width */
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    margin-top: 30px;
+}
+
+.overviewHeading {
+  /* margin: 0 auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(244, 241, 241);
+  font-weight: 300;
+}
+
+.projectOverview {
+  width: 700px;
+  padding: 10px;
+  background: rgb(244, 241, 241);
+}
+.overviewHeading,
+h5,
+strong {
+  background: rgb(244, 241, 241);
+}
+
+.useCase,
+.aboutMeParagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgb(244, 241, 241);
+}
+.useCase {
+  line-height: 1.5;
+  padding: 10px;
+}
+
+
+.portfolioLink {
+  background: rgb(185, 183, 183);
+}
+
+.getInTouchEmail {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 35px;
+  /* background: rgb(185, 183, 183); */
+  background: #ffba01;
+  color: rgb(42 52 55);
+  font-size: 18px;
+  text-decoration: none;
+  /* border: dashed; */
+
+}
+.getInTouchEmail:hover {
+  background: rgb(185, 183, 183);
+  transition: 0.9s ease;
+}
+</style>
+
+
 </head>
 <body>
   <div id="welcome"></div>
