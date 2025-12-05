@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div id="welcome"></div>
+  <!-- nav bar -->
+  <div class="navBar">
+    <div class="name">
+      <a class="name" href="#welcome">Sybille</a>
+    </div>
+    <div class="right">
+      <!-- <button class="links">Portfolio</button> -->
+      <a class="links" href="#portfolio">Portfolio</a>
+      <a class="links" href="#aboutMeContainer">About Me</a>
+      <a class="contact" href="#getInTouch">GET IN TOUCH</a>
+      <!-- <button class="contact">GET IN TOUCH</button> -->
+      <!-- get in touch on freelancermap / freelance.com / fiverr / upwork -->
+    </div>
+  </div>
+
+<!-- welcome -->
+  <!-- <div class="welcome-container"> -->
+    <div class="welcome">
+      <p class="intro">Hello. I'm Sybille.</p>
+      <p>I'm a Business Analyst based in Germany</p>
+      <p>with a background in Financial Services,</p>
+      <p>Transfer Agency and Tourism.</p>
+      <p>I'm also curious about other branches.</p>
+      <!-- <button class="portfolioButton">VIEW MY PORTFOLIO <i class="fa-regular fa-arrow-right"></i></button> -->
+      <a class="portfolioButton" href="#portfolio">VIEW MY PORTFOLIO</a>
+    </div>
+
+    <!-- <div class="pictureContainer">
+      <img src="portrait.png" alt="sybille">
+    </div>
+  </div> -->
+
+  <div id="portfolio"></div>
+  <!-- portfolio -->
+    <div class="portfolioHeading">
+      <h1>Portfolio</h1>
+    </div>
+    <div class="textAndScreenshots" >
+      <div class="container">
+        <div class="portfolio">
+          <div class="heading">
+            <img class="investaLogo" src="investaLogo.png" alt="Investa Logo">
+            <h3>INVESTA</h3>
+          </div>
+          <div class="portfolioContainer">
+            <p class="firstLine">INVESTA is a full-stack application that allows users to view details on their fund investments.</p>
+
+            </div>
+            <!-- <button class="portfolioLink">Visit the website</button> -->
+
+            <div class="investaScreenshots">
+              <img class="fundPortfolio" src="./fundPortfolio.png" alt="fund portfolio">
+              <div class="projectOverview">
+                <h2 class="overviewHeading">Project Overview</h2>
+                  <p class="useCase">
+                    <strong>Use Case</strong><br>
+                    This project aims to showcase features to enable clients with investment in funds to manage their investments online.
+                    Authenticated users can view the value on their funds, place orders and view their order history.
+                    Personal details can be managed through the platform.
+                    Charts visualise investment allocation and performance.</p>
+
+                  <p class="useCase">
+                    <strong>My Role</strong><br>
+                    This is a project I realised on my own.
+                    Based on my experience in the fund industry, I started with the business analysis
+                    to collect the requirements for a basic application, and compiled use cases, user story map and flow charts.
+                    Following this, I started the development of the frontend and backend using React with an express.js server and a PostgreSQL database.
+                    Coding has been partially supported by AI.
+                  </p>
+                  <!-- <button class="visitTheWebsite">VISIT THE WEBSITE<i class="fa-solid fa-arrow-right-long"></i></button> -->
+                  <a class="visitTheWebsite" href="https://investaapp.vercel.app/" target="_blank">VISIT THE WEBSITE</a>
+                </div>
+
+              <img class="orderHistory" src="./orderHistory.png" alt="order history">
+              <img class="placeNewOrder" src="./placeNewOrder.png" alt="new order">
+              <img class="profile" src="./profile.png" alt="profile">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="aboutMeContainer"></div>
+    <div class="aboutMeHeading">
+      <h1>About Me</h1>
+    </div>
+    <div class="aboutMeContainer">
+      <p class="aboutMeParagraph">
+        I didn’t start my career planning to become a Business Analyst. My early roles were operational,
+        deep in the day-to-day processes of the fund administration world.
+        Over time, I became fascinated by the systems that supported those processes -
+        the tools people relied on, the limitations they worked around, and the potential to make things better.
+        That curiosity eventually led me to a software vendor, where I had the opportunity to collaborate closely
+        with developers and software architects. Seeing how product decisions were made - and how much impact good analysis and communication could have -
+        sparked something in me. I realized I enjoyed understanding how things fit together just as much as I enjoyed improving them.
+        </p>
+
+        <p class="aboutMeParagraph">
+          That’s how I grew into the Business Analyst role: not by choosing it upfront, but by following the problems I wanted to solve.
+          Today, I’m a PMI-PBA certified IT Business Analyst who loves turning complex needs into clear, practical solutions.
+          I enjoy bridging business and technical perspectives, working with teams to refine ideas, and helping shape features
+          that genuinely improve users’ workflows.
+          To strengthen the technical side of my work, I’m currently studying business informatics and web development.
+          Understanding how systems behave under the hood helps me design better requirements and collaborate more effectively with technical teams.
+          My approach to analysis is rooted in communication, clarity, and collaboration.
+          I believe the best results come from well-structured conversations, shared understanding,
+          and documentation that makes sense to everyone — not just to the people who wrote it.
+        </p>
+
+        <p class="aboutMeParagraph">
+        Over the years, I’ve developed expertise in:
+        requirements elicitation and analysis
+        workshops, training, and product presentations
+        creating BRDs, FRDs, flowcharts, user guides, and other documentation
+
+        And I’ve worked across several domains, including:
+        fund administration and finance
+        HR systems
+        user management and profiles
+
+        If there’s a theme in my career, it’s this: I’m driven by improving how people work, one thoughtful solution at a time.
+
+        I love working in a field that continually challenges me and gives me the opportunity to shape solutions that genuinely help people.
+      </p>
+
+    </div>
+
+  <div id="getInTouch"></div>
+    <div class="getInTouchHeading">
+      <h1>Get In Touch</h1>
+    </div>
+    <div class="getInTouchContainer">
+      <a class="getInTouchEmail" href="mailto:sybillezehringer@gmail.com">Send email</a>
+      <a class="getInTouchEmail" href="https://www.linkedin.com/in/sybille-zehringer-3788111a6/" target="blank">LinkedIn</a>
+    </div>
+</body>
+</html>
